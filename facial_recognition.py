@@ -26,7 +26,7 @@ def main():
     image_folder = 'images'
     known_face_encodings, known_face_names = load_images_from_folder(image_folder)
 
-    video_capture = cv2.VideoCapture(0)
+    video_capture = cv2.VideoCapture(1)
 
     while True:
         ret, frame = video_capture.read()
